@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/css/footer.css">
         <link rel="stylesheet" href="status.css">
+        <script src="status.js"></script>
     </head>
     <body>
         <div class="header">
@@ -38,352 +39,71 @@
                         <span class="header__navbar--toggle-icons"></span>
                     </div>
                 </div>
-                <header>
-                    <a href="#" class="logo"></a>
-                  </header>
+
+                    <div class='h__slogan--title'>
+                      <h1 class='h__slogan--title'>Server Status</h1>
+                      <h1></h1>
+                    </div>
                   
-                  <div class="wrapper">
-                    <section class="status">
-                      <article>
-                        <div class="led green"></div>
-                        <h2>All services are online.</h2>
-                        <p>As of March 3, 2013 at 9:09PM PST</p>
-                      </article>
+        <div class="testBack">
+                  <div class='container'>
+                  
+                    <section class='ongoingIssues'>
+                      <a href='/issue/ccc9a970-98dc-4f10-afa5-d822d511172d' class='issueBanner issueBanner--monitoring'>
+                        <p class='issueBanner__state'>Surveillance</p>
+                        <h2>Problèmes de connectivité réseau</h2>
+                        <p class='issueBanner__time'>dernière mise à jour <time id="time"></time></p>
+                      </a>
                     </section>
-                    
-                    <section class="info">
-                      <article>
-                        <div class="service-label">Services</div>
-                        <div class="duration-label">Uptime of the past 90 days</div>
-                      </article>
-                    </section>
-                    
-                    <section class="stats">
-                      <article>
-                        <div class="service">API</div>
-                        <div class="chart">
-                            <div class="bar green" original-title="Dec 3, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 4, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 5, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 6, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 7, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 8, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 9, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 10, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 11, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 12, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 13, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 14, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 15, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 16, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 17, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 18, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 19, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 20, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 21, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 22, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 23, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 24, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 25, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 26, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 27, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 28, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 29, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 30, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Dec 31, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 1, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 2, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 3, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 4, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 5, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 6, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 7, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 8, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 9, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 10, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 11, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 12, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 13, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 14, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 15, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar yellow" original-title="Jan 16, 2013&lt;br&gt;<b class='yellow-text'>8m 0s</b>"></div>
-                            <div class="bar green" original-title="Jan 17, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 18, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 19, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 20, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 21, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 22, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 23, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 24, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 25, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 26, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 27, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 28, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 29, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 30, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Jan 31, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 1, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 2, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 3, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 4, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 5, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 6, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 7, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 8, 2013&lt;br&gt;N<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar yellow" original-title="Feb 9, 2013&lt;br&gt;<b class='yellow-text'>1m 0s</b>"></div>
-                            <div class="bar green" original-title="Feb 10, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 11, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 12, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 13, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 14, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 15, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 16, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 17, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 18, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 19, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 20, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 21, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 22, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 23, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 24, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 25, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 26, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 27, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Feb 28, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Mar 1, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Mar 2, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                            <div class="bar green" original-title="Mar 3, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>       
-                        </div>
-                      </article>
-                      
-                      <article>
-                        <div class="service">Stripe.js</div>
-                        <div class="chart">
-                          <div class="bar green" original-title="Dec 3, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 4, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 5, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 6, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 7, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 8, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 9, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 10, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 11, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 12, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 13, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 14, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 15, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 16, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 17, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 18, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 19, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 20, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 21, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 22, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 23, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 24, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 25, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 26, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 27, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 28, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 29, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 30, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 31, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 1, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 2, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 3, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 4, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 5, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 6, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 7, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 8, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 9, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 10, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 11, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 12, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 13, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 14, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 15, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 16, 2013&lt;br&gt<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 17, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 18, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 19, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 20, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 21, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 22, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 23, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 24, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 25, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 26, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 27, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 28, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 29, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar red" original-title="Jan 30, 2013&lt;br&gt;<b class='yellow-red'>41m 27s</b>"></div>
-                          <div class="bar green" original-title="Jan 31, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 1, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 2, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 3, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 4, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 5, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar yellow" original-title="Feb 6, 2013&lt;br&gt;<b class='yellow-text'>4m 0s</b>"></div>
-                          <div class="bar green" original-title="Feb 7, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 8, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 9, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 10, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 11, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 12, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 13, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 14, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 15, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 16, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 17, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 18, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 19, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 20, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 21, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 22, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 23, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 24, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 25, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 26, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 27, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 28, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Mar 1, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Mar 2, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Mar 3, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                        </div>
-                      </article>
-                      
-                      <article>
-                        <div class="service">Website</div>
-                        <div class="chart">
-                          <div class="bar green" original-title="Dec 3, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 4, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 5, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 6, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 7, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 8, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar yellow" original-title="Dec 9, 2012&lt;br&gt;<b class='yellow-text'>2m 0s</b>"></div>
-                          <div class="bar green" original-title="Dec 10, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 11, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 12, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 13, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 14, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 15, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 16, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 17, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 18, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 19, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 20, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 21, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 22, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 23, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 24, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 25, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 26, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 27, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 28, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 29, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 30, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Dec 31, 2012&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 1, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 2, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 3, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 4, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 5, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 6, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 7, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 8, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 9, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 10, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 11, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 12, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 13, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 14, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 15, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar yellow" original-title="Jan 16, 2013&lt;br&gt;<b class='yellow-text'>9m 0s</b>"></div>
-                          <div class="bar green" original-title="Jan 17, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 18, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 19, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 20, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar yellow" original-title="Jan 21, 2013&lt;br&gt;<b class='yellow-text'>7m 2s</b>"></div>
-                          <div class="bar green" original-title="Jan 22, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 23, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 24, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 25, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 26, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 27, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 28, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 29, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 30, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Jan 31, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 1, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar yellow" original-title="Feb 2, 2013&lt;br&gt;<b class='yellow-text'>1m 0s</b>"></div>
-                          <div class="bar green" original-title="Feb 3, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 4, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 5, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar yellow" original-title="Feb 6, 2013&lt;br&gt;<b class='yellow-text'>4m 1s</b>"></div>
-                          <div class="bar green" original-title="Feb 7, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 8, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 9, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 10, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 11, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 12, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 13, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 14, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 15, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 16, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 17, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 18, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 19, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 20, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 21, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 22, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 23, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 24, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 25, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 26, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 27, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Feb 28, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Mar 1, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Mar 2, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                          <div class="bar green" original-title="Mar 3, 2013&lt;br&gt;<b class='green-text'>All good :)<b>"></div>
-                        </div>
-                      </article>
-                    </section>
-                    
-                    <section class="legend">
-                      <article>
-                        <div class="legend-colour green"></div>
-                        <p>100% uptime</p>
-                        
-                        <div class="legend-colour yellow"></div>
-                        <p>0 - 10 min downtime</p>
-                        
-                        <div class="legend-colour red"></div>
-                        <p>10+ min downtime</p>
-                      </article>
+                  
+                    <section class='serviceGroup'>
+                      <ul class='serviceList serviceGroup__list'>
+                        <li class='serviceList__item'>
+                          <p class='serviceList__status'><span class="ok">Operational</span></p>
+                          <p class='serviceList__name'>
+                            NewRizonRP
+                          </p>
+                        </li>
+                        <li class='serviceList__item'>
+                          <p class='serviceList__status'><span class="ok">Operational</span></p>
+                          <p class='serviceList__name'>
+                            Web Site
+                          </p>
+                        </li>
+                        <li class='serviceList__item'>
+                          <p class='serviceList__status'><span class="ok">Operational</span></p>
+                          <p class='serviceList__name'>
+                            herbergeur NewRizon
+                          </p>
+                        </li>
+                              <li class='serviceList__item'>
+                          <p class='serviceList__status'><span class="ok">Operational</span></p>
+                          <p class='serviceList__name'>
+                            Discord BOT status NewRizon
+                          </p>
+                        </li>
+                        <li class='serviceList__item'>
+                          <p class='serviceList__status'><span class="ok">Operational</span></p>
+                          <p class='serviceList__name'>
+                            FiveM
+                          </p>
+                        </li>
+                        <li class='serviceList__item'>
+                          <p class='serviceList__status'><span class="outage">Outage</span></p>
+                          <p class='serviceList__name'>
+                            Autre Bot Discord 
+                          </p>
+                        </li>
+                      </ul>
                     </section>
                   </div>
                   
-                  <div class="wrapper">
-                    <section class="twitter">
-                      <article>
-                        <div class="entypo-twitter"></div>
-                        <a href="https://twitter.com/stripestatus" target="_blank">@stripestatus</a>
-                      </article>
-                    </section>
-                    
-                    <section class="tweet">
-                      <article>
-                        <div class="tweet-date">Feb 27 at 9:05AM</div>
-                        <p>We're experiencing higher than normal load on our batch infrastructure. Webhooks are about an hour delayed. API calls are not impacted</p>
-                        
-                        <div class="tweet-date">Feb 23 at 12:20AM</div>
-                        <p>Sorry about that! Our systems are showing everything as caught up now. Let us know if you're still seeing problems!</p>
-                      </article>
-                    </section>
-                  </div>
+                  <footer class='siteFooter'>
+                    <div class='container'>
+                    </div>
+                  </footer>
                   
+                </div>
 
         <footer>
             <div class="container">
