@@ -3,24 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
-font-family: 'Roboto', Arial, Helvetica, sans-serif;
-font-size: 16px;
-font-weight: 300;
+
+html {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
 }
+
 .mt-twenty {
   margin-top: 35px;
 }
+
 .wrapper {
   position: relative;
-  width: 90%;
+  width: 35%;
   background-color: #fff;
-  color: #222;
-  padding: 40px 20px;
+  /* color: #222; */
+  /* padding: 40px 20px; */
+  padding: 10px 10px;
   border-radius: 3px;
   margin: 50px auto 0;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .25);
 }
+
 .aso {
   width: 400px;
   margin: 0 auto;
@@ -28,6 +33,7 @@ font-weight: 300;
   box-shadow: 1px 2px 70px rgba(0, 0, 0, .15);
   overflow: hidden;
 }
+
 .aso h3 {
   color: #7177bf;
   font-size: 18.3px;
@@ -35,25 +41,30 @@ font-weight: 300;
   word-spacing: 5px;
   margin-top: 20px;
 }
+
 .operational_block {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #e9eaf0;
-  padding: 25px 0;
+  padding: 25px 0; 
   perspective: 1000px;
 }
+
 .operational_block h6 {
   font-weight: 400;
   font-size: 14px;
   color: #646790;
   line-height: 24px;
 }
-a.optbtn:hover, a.optbtn:focus {
+
+a.optbtn:hover,
+a.optbtn:focus {
   color: #3ae5c4;
   background-color: #fff;
   border: 1px solid #3ae5c4;
   box-shadow: 0 0 0 transparent;
 }
+
 a.optbtn {
   color: #fff;
   text-decoration: none;
@@ -71,10 +82,13 @@ a.optbtn {
   will-change: color, background-color, border, box-shadow;
   transition: 200ms ease;
 }
-a.vfspbtn:hover, a.vfspbtn:focus {
+
+a.vfspbtn:hover,
+a.vfspbtn:focus {
   background-color: #b4b8df;
   color: #fff;
 }
+
 a.vfspbtn {
   text-decoration: none;
   color: #b4b8df;
@@ -93,6 +107,7 @@ a.vfspbtn {
   will-change: box-shadow, color;
   transition: 300ms linear;
 }
+
 .operational_block.bb_theme {
   border-bottom: 1px solid #e9eaf0;
 }
